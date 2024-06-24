@@ -35,7 +35,7 @@ header p {
 }
 
 main {
-  height: 80vh;
+  height: auto;
   display: flex;
   justify-content: center;
 }
@@ -46,12 +46,17 @@ form {
   width: 26rem;
   padding: 0.68rem 1rem;
   border-radius: 0.28rem;
+  margin: 0.42rem 0;
 }
 
 label {
   display: block;
   margin: 0.22rem;
   font-size: 16px;
+}
+
+.label-group {
+  margin: 0.44rem 0;
 }
 
 input {
@@ -73,4 +78,42 @@ select {
   margin: 0.32rem 0;
   outline: none;
   color: #75758b;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.radio-group input {
+  margin: 0;
+  width: auto;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  padding: 0.34rem 0.44rem;
+  height: 7rem;
+  width: 100%;
+  border-radius: 0.24rem;
+  color: #75758b;
+  margin: 0.24rem 0;
+}
+
+button {
+  border: none;
+  background-color: #1f9a5f;
+  width: 100%;
+  color: white;
+  padding: 0.68rem 0;
+  margin: 0.24rem 0;
+  border-radius: 0.26rem;
 }
